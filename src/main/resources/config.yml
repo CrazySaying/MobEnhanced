@@ -1,0 +1,46 @@
+#理论上可添加除原版的怪物，可作为BOSS，格式如下，开头是怪物英文实体，
+MOBS:
+  #末影龙
+  ENDER_DRAGON:
+    #怪物名称
+    name: "§b§l末影龙"
+    #是否开启强化
+    Enable: true
+    #生命值(需带有小数点)
+    Health: 1500.0
+    #攻击力(需带有小数点)
+    Attack: 15.0
+    #防御力(需带有小数点)
+    Defense: 15.0
+    reward:
+      #给予玩家金币
+      fund: 500.0
+      #后台执行指令
+      command:
+        - "give {player} minecraft:golden_apple 1"
+  #凋零
+  WITHER:
+    #怪物名称
+    name: "§b§l凋零"
+    #是否开启强化
+    Enable: true
+    #生命值(需带有小数点)
+    Health: 1500.0
+    #攻击力(需带有小数点)
+    Attack: 15.0
+    #防御力(需带有小数点)
+    Defense: 15.0
+    reward:
+      #给予玩家金币
+      fund: 500.0
+      #后台执行指令
+      command:
+        - "give {player} minecraft:golden_apple 1"
+#插件前缀
+Prefix: "§a§l[§b§l生物增强§a§l]§r"
+Messages:
+  spawn_1: " §6精英怪物§b§l{name}§6已出现！§6附近玩家: {player}"
+  death_1: " §b§l{name}§6被击败！击杀者: §b{player}"
+Config:
+#多人血量翻倍
+  EnableMPlayerHealth: false
